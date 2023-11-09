@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="FullScreen">
+        <div class="CalcBox">
+            <div class="OutputView">
+                <p id="screen"></p>
+            </div>
+            <div class="ButtonBox">
+                <div class="numPad">
+                    <button onclick="calcFunction(7)" class="calcButton">7</button>
+                    <button onclick="calcFunction(8)" class="calcButton">8</button>
+                    <button onclick="calcFunction(9)" class="calcButton">9</button>
+                    <button class="delBox calcButton">DEL</button>
+                    <button onclick="calcFunction(4)" class="calcButton">4</button>
+                    <button onclick="calcFunction(5)" class="calcButton">5</button>
+                    <button onclick="calcFunction(6)" class="calcButton">6</button>
+                    <button onclick="calcSymbol(1)" class="calcButton">+</button>
+                    <button onclick="calcFunction(1)" class="calcButton">1</button>
+                    <button onclick="calcFunction(2)" class="calcButton">2</button>
+                    <button onclick="calcFunction(3)" class="calcButton">3</button>
+                    <button onclick="calcSymbol(2)" class="calcButton">-</button>
+                    <button onclick="calcSymbol(3)" class="calcButton">.</button>
+                    <button onclick="calcFunction(0)" class="calcButton">0</button>
+                    <button onclick="calcSymbol(4)" class="calcButton">/</button>
+                    <button onclick="calcSymbol(5)" class="calcButton">x</button>
+                </div>
+                <button onclick="evalFunction(2)" class="calcButton resetButton">RESET</button>
+                <button onclick="evalFunction(1)" class="calcButton equalButton">=</button>
+            </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
